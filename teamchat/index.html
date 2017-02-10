@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>apps</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+  <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+	<script src="js/interact.min.js"></script>
+  
+</head>
+<body>
+
+	<div class="back">
+		<div class="header">
+			<div id="title">WrapItApp</div>
+			<i class="fa fa-bars fa-2x ani" onclick="a()"></i>
+			<i class="fa fa-ellipsis-v fa-2x"></i>
+		</div>
+		<div id="webname" align="center">Amazon
+			</div>
+		<div id="ele1">
+		</div>
+			<div id="webname2" align="center">Flipkart
+			</div>
+		<div id="ele2">
+		</div>
+			<div id="webname3" align="center">Ebay
+			</div>
+		<div id="ele3">
+		</div>
+			<div id="webname4" align="center">Myntra
+			</div>
+		<div id="ele4">
+		</div>
+			<div id="webname5" align="center">SnapDeal
+			</div>
+		<div id="ele5">
+		</div>
+		<div id="elec1" ></div>
+		<div id="elec2"></div>
+		<div id="elec3"></div>
+		<div id="elec4"></div>
+		<div id="elec5"></div>
+		<div id="elec6"></div>
+		<div id="elec7"></div>
+		<div id="elec8"></div>
+		<div id="elec9"></div>
+		<div id="elec10"></div>
+		
+	<div id="chatdiv" style="display:none;position:absolute;top:0px; left:0px; width:100vw; height:100vh; background-color:black">
+        </div>
+
+		
+		<a href="javascript:launchTeamchat();">
+		
+		<div id="tizi" onclick="c()">
+			
+		</div>
+	
+		</a>
+		<div id="tiza" onclick="d()"></div>
+	
+	</div>
+	
+	<div class="sidebar animated slideInLeft" id="side">
+			<i class="fa fa-close fa-2x" onclick="b()"></i>
+	</div>
+	
+	<div id="main" class="animated bounceOut">
+		
+		<div id="below" align="center" class="animated fadeIn">
+			Made With a | And a Laptop.
+		</div>
+		<div id="logo" class="animated fadeIn">
+			<img src="a.png" height="100%" width="auto">
+		</div>
+		<div id="head" class="animated fadeIn">
+			WrapItApp
+		</div>
+	</div>
+
+	    <script src="https://s3.amazonaws.com/teamchat-js-sdk/teamchat_sdk_1.0.js"></script>
+	<script type="text/javascript"> 
+            // This can also be included in document onload
+            api.init("HwXLx1918150849","40922");
+
+            //function called on click of teamchat logo;
+            function launchTeamchat(){
+                document.getElementById("chatdiv").style.display="inline";
+                //Embeds the room list in the chatdiv
+                api.embedroomlist("chatdiv"); 
+            }       
+        </script>
+</body>
+</html>
